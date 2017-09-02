@@ -22,7 +22,7 @@ class App extends PureComponent {
         <Header />
 
         <div className="container">
-          <div className="text-center">
+          <div className="text-center mb-4">
             <h1>Welcome to Scratch</h1>
             <h5 className="text-secondary">
               A markdown editor for those who like it simple.
