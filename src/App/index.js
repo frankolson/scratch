@@ -13,7 +13,13 @@ class App extends PureComponent {
 
     this.state = {
       content: "# Hello, World!",
-    }
+    };
+
+    this.handleChange = this.handleChange.bind(this);
+  }
+
+  handleChange(content) {
+    this.setState({ content })
   }
 
   render() {
@@ -31,7 +37,10 @@ class App extends PureComponent {
 
           <div className="row">
             <div className="col-md-6">
-              <Editor content={this.state.content}/>
+              <Editor
+                content={this.state.content}
+                handleChange={this.handleChange}
+              />
             </div>
 
             <div className="col-md-6">

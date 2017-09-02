@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 
 const propTypes = {
   content: PropTypes.string.isRequired,
+  handleChange: PropTypes.func.isRequired,
 }
 
 class Editor extends PureComponent {
@@ -13,6 +14,7 @@ class Editor extends PureComponent {
         <h6>Markdown</h6>
         <textarea
           className="form-control"
+          onChange={e => this.props.handleChange(e.target.value)}
           rows="30"
           value={this.props.content}
         >
