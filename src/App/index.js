@@ -8,6 +8,14 @@ import Preview from '../Preview';
 import './App.css'
 
 class App extends PureComponent {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      content: "# Hello, World!",
+    }
+  }
+
   render() {
     return (
       <div>
@@ -23,11 +31,11 @@ class App extends PureComponent {
 
           <div className="row">
             <div className="col-md-6">
-              <Editor />
+              <Editor content={this.state.content}/>
             </div>
 
             <div className="col-md-6">
-              <Preview content="# testing"/>
+              <Preview content={this.state.content}/>
             </div>
           </div>
         </div>

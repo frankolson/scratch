@@ -5,11 +5,7 @@ import marked from 'marked';
 import hljs from 'highlight.js';
 
 const propTypes = {
-  content: PropTypes.string,
-}
-
-const defaultProps = {
-  content: '',
+  content: PropTypes.string.isRequired,
 }
 
 marked.setOptions({
@@ -39,6 +35,5 @@ class Preview extends PureComponent {
 }
 
 Preview.propTypes = propTypes;
-Preview.defaultProps = defaultProps;
 
 export default Preview;
