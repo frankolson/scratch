@@ -26,10 +26,7 @@ class Preview extends PureComponent {
   render() {
     const { content } = this.props;
     return (
-      <div>
-        <h6>Preview</h6>
-        <div dangerouslySetInnerHTML={{__html: marked(content)}}></div>
-      </div>
+      <div dangerouslySetInnerHTML={{__html: marked(content)}}></div>
     );
   }
 }
