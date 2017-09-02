@@ -27,7 +27,7 @@ class App extends PureComponent {
             </div>
 
             <div className="col-md-6">
-              <Preview value="testing"/>
+              <Preview content="# testing"/>
             </div>
           </div>
         </div>
