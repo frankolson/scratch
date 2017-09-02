@@ -1,16 +1,24 @@
-import React, { Component } from 'react';
-import logo from '../logo.svg';
-import './App.css';
+// Vendor Assets
+import React, { PureComponent } from 'react';
 
-class App extends Component {
+// Project Assets
+import Header from '../Header';
+import './App.css'
+
+class App extends PureComponent {
   render() {
     return (
       <div>
-        <img src={logo} className="App-logo" alt="logo" />
-        <h2>Welcome to React</h2>
-        <p>
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <Header />
+
+        <div className="container">
+          <div className="text-center">
+            <h1>Welcome to Scratch</h1>
+            <h5 className="text-secondary">
+              A markdown editor for those who like it simple.
+            </h5>
+          </div>
+        </div>
       </div>
     );
   }
