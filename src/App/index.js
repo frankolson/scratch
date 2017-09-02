@@ -4,6 +4,7 @@ import React, { PureComponent } from 'react';
 // Project Assets
 import Editor from '../Editor';
 import Header from '../Header';
+import Preview from '../Preview';
 import './App.css'
 
 class App extends PureComponent {
@@ -23,6 +24,10 @@ class App extends PureComponent {
           <div className="row">
             <div className="col-md-6">
               <Editor />
+            </div>
+
+            <div className="col-md-6">
+              <Preview value="testing"/>
             </div>
           </div>
         </div>
