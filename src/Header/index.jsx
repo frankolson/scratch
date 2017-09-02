@@ -11,7 +11,7 @@ class Header extends PureComponent {
       <nav className="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
         <div className="container">
           <a href="#" className="navbar-brand">
-            <img src={logo} className="App-logo" alt="logo" /> Scratch
+            <img src={logo} className="header-logo" alt="logo" /> Scratch
           </a>
         </div>
       </nav>
